@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="portfolio">
+<head>
+<title>Kevin Casado</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="js/portfolio.js"></script>
+<link rel="icon" type="image/x-icon" href="res/favicon.ico">
+</head>
+
+	<body>
+
+		<header class="header_nav container-fluid">
+
+					<img src="res/yinyang.png" class ="img-circle text-center"  >
+					<h1 class ="text-center">Kevin Casado</h1>
+					<ul class="list-inline  text-center container-fluid">
+						<li><a href="https://github.com/kscasado">
+								<img src="res/github16px.png" class="img-circle"</a></li>
+						<li><a href="https://www.linkedin.com/pub/kevin-casado/a9/b86/20"><img src="res/linkedin16px.png" class="img-circle"</a></li>
+						<li><a href="mailto:kscasado@gmail.com">
+								<img src="res/Gmail.png" class="img-circle"</a></li>
+
+					</ul>
+					<br>
+					<div ng-controller="cntrl">
+<br>
+<br>
+<br>
+					<div>
+					<ul class="list-inline  text-center container-fluid">
+
+						<li><a ui-sref="resume">Resume</a></li>
+						<li><a ui-sref="projects">Projects</a>   </li>
+						<li> <a ui-sref="blog">Blog</a> </li>
+					</ul>
+				</div>
+
+<br>
+</header>
+	<div ui-view></div>
+
+
+
+</div>
+<footer><p> Contact Stuff here</p> </ui-view>
+	</body>
+
+</html>

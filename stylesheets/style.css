@@ -1,0 +1,61 @@
+.header_nav{
+	background-image:url('../res/bigSurPano.jpg');
+
+background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+color:white
+}
+
+.body{
+
+	background-color:#0a0a0f;
+	text:white;
+}
+.container{
+	display:inline;
+	vertical-align:top;
+}
+.social_Media li{
+	padding-top:0px;
+
+	padding-bottom:0px;
+	padding-left:7%;
+	padding-right:0px;
+}
+.content{
+	height:100%;
+
+	margin:0px;
+	float:left;
+	vertical-align:left;
+}
+.img-responsive{
+	margin:0;
+	float:left;
+}
+.content p,h3{
+	text-align:center;
+}
+.header_nav h2{
+	padding-left:5%;
+}
+.img-responsive{
+	float:left;
+	vertical-align:top;
+}
+header .a, h1{
+	color: white;
+
+
+}
+header h1{
+	color:#703333;
+}
+ul{
+	list-style-type:none;
+}
+
+html body{
+	height:100%;
+}
