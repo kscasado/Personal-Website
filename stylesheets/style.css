@@ -1,16 +1,17 @@
+
 .header_nav{
 	background-image:url('../res/bigSurPano.jpg');
 
 background-repeat:no-repeat;
 background-size:contain;
 background-position:center;
-color:white
+/*color:white*/
 }
 
-.body{
+body{
 
-	background-color:#0a0a0f;
-	text:white;
+	/*background-color: #000080;*/
+	/*text:white;*/
 }
 .container{
 	display:inline;
@@ -44,11 +45,7 @@ color:white
 	float:left;
 	vertical-align:top;
 }
-header .a, h1{
-	color: white;
 
-
-}
 header h1{
 	color:#703333;
 }
