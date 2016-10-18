@@ -1,0 +1,112 @@
+mixin card(link, title, content)
+  a(href=link).col.s12.m6
+    .card-panel
+      h5.card-title.grey-text.text-darken-4= title
+      span.grey-text.text-darken-3= content
+      
+mixin post()
+  .post.random-color
+    span.date Date
+    h4 Title
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quas. Earum nesciunt ut alias repudiandae porro aspernatur non, voluptates
+    a.waves-effect.waves-light Read more
+
+.grad#top
+
+  .nav
+    li
+      a(href="#design").waves-effect.waves-light
+        | about
+      
+    li
+      a(href="#projects").waves-effect.waves-light
+        | projects
+        
+        
+     li
+       a(href="#contact").waves-effect.waves-light
+         | contact
+
+  .land.wow.animted.fadeInUp
+    .content
+      img(src='https://images-na.ssl-images-amazon.com/images/I/41MI7CUBBgL.jpg').circle.logo
+     
+  .container.design.content
+    .row.icon-grid
+      .col.s12
+        .a(href='https://github.com/kscasado').waves-effect.waves-light.btn.center.github
+          img(src='https://github.com/favicon.ico')  
+        .a(href='https://github.com/kscasado').wave-effect.waves-light.btn.center.linkedin
+           img(src='http://ohemily.github.io/images/icons/linkedin.png')
+           
+     
+       
+         
+        
+  
+  .container#design.design
+    .content.wow.animted.fadeIn
+      .row.icon-grid
+        .col.s12
+          i.lnr.lnr-screen
+      h3.about-me About Me
+      .row.about
+        .col.s12.m6.offset-m3.white-text
+          p.flow-text
+            | My Name is Kevin Casado and I recently graduated from California State University Los Angeles in Computer Science, I enjoy developing in the javascript realm of things and find enjoyment in the working on full stack projects.
+              
+  .container.projects#projects
+    .content.flow-content.wow.animted.fadeInUp
+      .row
+        .col.s12.center.header.white-text
+          i.lnr.lnr-rocket
+          h3.text-white Projects
+          
+      .row.project-row
+        // img, title, content, link
+        +card('http://csns.calstatela.edu/department/cs/project/view?id=5126671','Salient Feature Detection on Mars','A Senior Capstone project done with The Jet Propulsion Laboratory to detect craters on mars.')
+        
+        +card('https://mean-show-tracker.herokuapp.com/','Show Tracker',
+        'Uses the MEAN stack to track the shows a user has seen.Implements a REST API as well as uses other open source API\'s'
+        )
+        +card('https://github.com/kscasado/MessageBoard','Message Board','This is a Reddit Style Board I made to get familiar with how the MEAN stack works. Users can post and upvote similar to reddit'
+        
+        )
+        
+        +card('https://github.com/kscasado/Plans','Plans','Currently In progress, uses the MERN stack to help users make plans. Follow my progress on github!'
+        
+        )
+        
+        
+  footer.container#contact.wow.animted.fadeInUp
+    .footer-content
+      .row
+        .col.s12.center.header.white-text
+          i.lnr.lnr-coffee-cup
+          h3.text-white Contact Me
+
+        form(action='http://formspree.io/').col.s12
+          .row
+            .input-field.col.s12.m4
+              input#first_name.validate.white-text(type='text', required)
+              label(for='first_name') First Name
+              
+            .input-field.col.s12.m4
+              input#last_name.validate.white-text(type='text', required)
+              label(for='last_name') Last Name
+              
+            .input-field.col.s12.m4
+              input#email.validate.white-text(type='text', required)
+              label(for='email') Email Address
+              
+            .input-field.col.s12
+              textarea#textarea1.materialize-textarea.white-text
+              label(for='textarea1') Textarea
+
+    
+.overlay
+
+
+a(href="#top").top.waves-effect.waves-light
+  i.lnr.lnr-chevron-up
+
